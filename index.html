@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Website Design</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Logo">
+      </a>
+      <div class="search-box">
+        <img src="images/search.png" alt="Search Icon">
+        <input type="text" placeholder="Search">
+      </div>
+    </div>
+    <div class="navbar-center">
+      <ul>
+        <li><a href="#" class="active-link"><img src="images/home.png" alt="Home" /><span>Home</span></a></li>
+        <li><a href="#"><img src="images/network.png" alt="Network" /><span>My Network</span></a></li>
+        <li><a href="#"><img src="images/jobs.png" alt="Jobs" /><span>Jobs</span></a></li>
+        <li><a href="#"><img src="images/message.png" alt="Messaging" /><span>Messaging</span></a></li>
+        <li><a href="#"><img src="images/notification.png" alt="Notifications" /><span>Notifications</span></a></li>
+      </ul>
+    </div>
+    <div class="navbar-right">
+      <div class="online">
+        <img src="c:\Users\Shaik\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Snips\Screenshot 2025-07-10 025123.png" class="nav-profile-img" onclick="toggleMenu()">
+      </div>
+    </div>
+
+<!------------profile-drop-down-menu------------>
+<div class="profile-menu-wrap" id="profileMenu">
+  <div class="profile-menu">
+
+    <!-- User Info Section -->
+    <div class="user-info">
+      <img src="c:\Users\Shaik\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Snips\Screenshot 2025-07-10 025123.png" alt="User Profile">
+      <div>
+        <h3>Huzaif Khan</h3>
+        <a href="profile.html">See your profile</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Menu Links -->
+    <a href="#" class="profile-menu-link">
+      <img src="images/feedback.png" alt="Feedback Icon">
+      <p>Give Feedback</p>
+      <span>></span>
+    </a>
+
+    <a href="#" class="profile-menu-link">
+      <img src="images/setting.png" alt="Settings Icon">
+      <p>Setting & Privacy</p>
+      <span>></span>
+    </a>
+
+    <a href="#" class="profile-menu-link">
+      <img src="images/help.png" alt="Help Icon">
+      <p>Help & Support</p>
+      <span>></span>
+    </a>
+
+    <a href="#" class="profile-menu-link">
+      <img src="images/display.png" alt="Display Icon">
+      <p>Display & Accessibility</p>
+      <span>></span>
+    </a>
+    <a href="#" class="profile-menu-link">
+      <img src="images/logout.png" alt="Logout Icon">
+      <p>Logout</p>
+      <span>></span>
+    </a>
+
+  </div>
+</div>
+</nav>
+  <!-- navbar close -->
+  <div class="container">
+
+    <!-- Left Sidebar -->
+    <div class="left-sidebar">
+      <div class="sidebar-profile-box">
+        <img src="images/WhatsApp Image 2025-07-10 at 02.57.03_9a0bee46.jpg" width="100%" alt="Cover" />
+        <div class="sidebar-profile-info">
+          <img src="c:\Users\Shaik\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Snips\Screenshot 2025-07-10 025123.png" alt="Profile Picture" />
+          <h1>Huzaif Khan</h1>
+          <h3>Web Developer at MGMU</h3>
+          <ul>
+            <li>Your profile views <span>52</span></li>
+            <li>Your post views <span>810</span></li>
+            <li>Your connection views <span>500+</span></li>
+          </ul>
+        </div>
+        <div class="sidebar-profile-link">
+          <a href="#"><img src="images/items.png">My Items</a>
+          <a href="#"><img src="images/premium.png">Try Premium</a>
+        </div>
+      </div>
+
+      <div class="sidebar-activity"  id="sidebar-Activity">
+        <h3>RECENT</h3>
+        <a href="#"><img src="images/recent.png" alt="Recent" />Web Development</a>
+        <a href="#"><img src="images/recent.png" alt="Recent" />User Interface</a>
+        <a href="#"><img src="images/recent.png" alt="Recent" />Online Learning</a>
+        <a href="#"><img src="images/recent.png" alt="Recent" />Learn Online</a>
+        <a href="#"><img src="images/recent.png" alt="Recent" />Code Better</a>
+        <a href="#"><img src="images/recent.png" alt="Recent" />Group Learning</a>
+
+        <h3>GROUPS</h3>
+        <a href="#"><img src="images/group.png" alt="Group" />Web Design Group</a>
+        <a href="#"><img src="images/group.png" alt="Group" />HTML & CSS Learning</a>
+        <a href="#"><img src="images/group.png" alt="Group" />Python & JavaScript Group</a>
+        <a href="#"><img src="images/group.png" alt="Group" />Learning Coding Online</a>
+
+        <h3>HASHTAGS</h3>
+        <a href="#"><img src="images/hashtag.png" alt="#">#webdevelopment</a>
+        <a href="#"><img src="images/hashtag.png" alt="#"
+          >#userinterface</a>
+        <a href="#"><img src="images/hashtag.png" alt="#">#onlinelearning</a>
+
+        <div class="discover-more-link">
+          <a href="#">Discover more</a>
+        </div>
+      </div>
+          <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+
+    </div>
+
+    <!-----------------main-content------------>
+    <div class="main-content">
+
+      <div class="create-post">
+        <div class="create-post-input">
+          <img src="c:\Users\Shaik\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Snips\Screenshot 2025-07-10 025123.png" alt="Profile" />
+          <textarea rows="2" placeholder="Write a post"></textarea>
+        </div>
+        <ul class="create-post-links">
+          <li><img src="images/photo.png" alt="Photo" />Photo</li>
+          <li><img src="images/video.png" alt="Video" />Video</li>
+          <li><img src="images/event.png" alt="Event" />Event</li>
+          <li>Post</li>
+        </ul>
+      </div>
+
+      <div class="sort-by">
+        <hr />
+        <p>Sort by: <span>Top <img src="images/down-arrow.png" alt="Sort" /></span></p>
+      </div>
+
+      <!-- Post 1 -->
+      <div class="post">
+        <div class="post-author">
+          <img src="c:\Users\Shaik\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Snips\Screenshot 2025-07-10 025123.png" alt="Author" />
+          <div>
+            <h1>Huzaif Khan</h1>
+            <small>B.Tech in Artificial Intelligence | Machine Learning</small>
+            <small>2 hours ago</small>
+          </div>
+        </div>
+        <p>
+          🌐 In today’s digital age, a successful website isn’t just about design — it’s about visibility and reach. 💡 As a B.Tech AIML student from MGM University, Aurangabad, and 🏅 Runner-up at Codethon C-Quest, I’ve learned the impact of SEO and digital marketing firsthand. 🚀 Being on the first page of major search engines gives any website a strong edge over the competition. 🔍 It’s not just about building something great — it’s about making sure the world can discover it.
+        </p>
+        <img src="images/WhatsApp Image 2025-07-10 at 18.55.36_e19f8dc0.jpg" width="100%" alt="Post Image" />
+        <div class="post-stats">
+          <div>
+            <img src="images/thumbsup.png" alt="Like" />
+            <img src="images/love.png" alt="Love" />
+            <img src="images/clap.png" alt="Clap" />
+            <span class="liked-users">Mayur Patil and 75 others</span>
+          </div>
+          <span>22 comments 40 shares</span>
+        </div>
+        <div class="post-activity">
+          <div>
+            <img src="images/WhatsApp Image 2025-07-10 at 20.45.10_2d9c46dd.jpg" class="post-activity-user-icon" alt="User Icon" />
+            <img src="images/down-arrow.png" class="post-activity-user-icon" alt="Dropdown" />
+          </div>
+          <div class="post-activity-link"><img src="images/like.png" alt="Like" /><span>Like</span></div>
+          <div class="post-activity-link"><img src="images/comment.png" alt="Comment" /><span>Comment</span></div>
+          <div class="post-activity-link"><img src="images/share.png" alt="Share" /><span>Share</span></div>
+          <div class="post-activity-link"><img src="images/send.png" alt="Send" /><span>Send</span></div>
+        </div>
+        
+      </div>
+
+      <!-- Post 2 -->
+      <div class="post">
+        <div class="post-author">
+          <img src="images/WhatsApp Image 2025-07-10 at 20.45.10_2d9c46dd.jpg" alt="Author" />
+          <div>
+            <h1>Mayur Patil</h1>
+            <small>B.Tech | MGMU </small>
+            <small>9 hours ago</small>
+          </div>
+        </div>
+        <p>
+         :
+
+👨‍💻 Here’s to the Engineer who builds dreams with logic, solves problems with patience, and powers the future with innovation. ⚙️💡
+
+Being a B.Tech student isn’t just about codes, circuits, or calculations — it’s about learning how to turn "what if?" into "what’s next?". 🚀📐
+From endless assignments 🧾 to sleepless project nights 🌙, every challenge shapes a sharper mind and a stronger will.
+
+
+
+
+        </p>
+        <img src="images/WhatsApp Image 2025-07-10 at 20.47.33_a2649f21.jpg" width="100%" alt="Post Image" />
+        <div class="post-stats">
+          <div>
+            <img src="images/thumbsup.png" alt="Like" />
+            <img src="images/love.png" alt="Love" />
+            <img src="images/clap.png" alt="Clap" />
+            <span class="liked-users">Huzaif Khan and 105 others</span>
+          </div>
+          <span>52 comments · 50 shares</span>
+        </div>
+        <div class="post-activity">
+          <div>
+            <img src="c:\Users\Shaik\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Snips\Screenshot 2025-07-10 025123.png" class="post-activity-user-icon" alt="User Icon" />
+            <img src="images/down-arrow.png" class="post-activity-user-icon" alt="Dropdown" />
+          </div>
+          <div class="post-activity-link"><img src="images/like.png" alt="Like" /><span>Like</span></div>
+          <div class="post-activity-link"><img src="images/comment.png" alt="Comment" /><span>Comment</span></div>
+          <div class="post-activity-link"><img src="images/share.png" alt="Share" /><span>Share</span></div>
+          <div class="post-activity-link"><img src="images/send.png" alt="Send" /><span>Send</span></div>
+        </div>
+      </div>
+<!-- Post 3 -->
+      <div class="post">
+        <div class="post-author">
+          <img src="c:\Users\Shaik\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Snips\Screenshot 2025-07-10 025123.png" alt="Author" />
+          <div>
+            <h1>Huzaif Khan</h1>
+            <small>B.Tech in Artificial | Machine Learning</small>
+            <small>15 days ago</small>
+          </div>
+        </div>
+        <p>
+          👩‍⚕️ Happy Doctor's Day to the one who heals with knowledge, cares with compassion, and shines with strength! 🌿💚
+Your journey as a BAMS student isn’t just about books and exams — it's about choosing a path that brings wellness, balance, and hope to so many lives.
+🧠📖 From late-night study sessions to early-morning practicals, your dedication is nothing short of inspiring.
+You’re not just becoming a doctor — you're becoming a lifeline. 🫀✨
+So proud of you today and every day.
+🌸 Here's to the future Dr.Shivzara khan— changing the world, one pulse at a time. ❤️
+
+
+        </p>
+        <img src="images/happy-doctors-day-2024-wishes-quotes-2024-06-3d206e7ece4e133cb6303205d3714a2d.avif" width="100%" alt="Post Image" />
+        <div class="post-stats">
+          <div>
+            <img src="images/thumbsup.png" alt="Like" />
+            <img src="images/love.png" alt="Love" />
+            <img src="images/clap.png" alt="Clap" />
+            <span class="liked-users">Shivzara Khan and 75 others</span>
+          </div>
+          <span>22 comments · 40 shares</span>
+        </div>
+        <div class="post-activity">
+          <div>
+            <img src="images/WhatsApp Image 2025-07-10 at 20.24.52_047d6561.jpg" class="post-activity-user-icon" alt="User Icon" />
+            <img src="images/down-arrow.png" class="post-activity-user-icon" alt="Dropdown" />
+          </div>
+          <div class="post-activity-link"><img src="images/like.png" alt="Like" /><span>Like</span></div>
+          <div class="post-activity-link"><img src="images/comment.png" alt="Comment" /><span>Comment</span></div>
+          <div class="post-activity-link"><img src="images/share.png" alt="Share" /><span>Share</span></div>
+          <div class="post-activity-link"><img src="images/send.png" alt="Send" /><span>Send</span></div>
+        </div>
+      </div>
+      <!-- Post 4 -->
+      <div class="post">
+        <div class="post-author">
+          <img src="c:\Users\Shaik\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Snips\Screenshot 2025-07-10 025123.png" alt="Author" />
+          <div>
+            <h1>Huzaif Khan</h1>
+            <small>B.Tech in Artificial Intelligence | Machine Learning</small>
+            <small>2days ago</small>
+          </div>
+        </div>
+        <p>
+          Thank you, #SkillUp by #Simplilearn
+
+🚀 Just Completed: Introduction to Generative AI! 🤖✨
+
+Super thrilled to share that I’ve successfully completed the Introduction to Generative AI course! 🙌💡
+The learning journey was insightful and packed with industry-relevant skills that are shaping the future. 🔍📈
+
+A huge shoutout to #SkillUp by #Simplilearn for offering such top-notch, free upskilling opportunities. 🧠📚
+I highly recommend it to anyone aiming to stay ahead with today’s in-demand tech skills! 💼🔥
+
+📜 Another certificate added to my professional portfolio — and the learning never stops! 💪🔗
+
+#Upskilling #AI #Certification #SkillUpBySimplilearn #GenerativeAI #JobReady #KeepLearning 💻🎯
+
+
+        </p>
+        <img src="images/WhatsApp Image 2025-07-10 at 20.51.21_2859aa05.jpg" width="100%" alt="Post Image" />
+        <div class="post-stats">
+          <div>
+            <img src="images/thumbsup.png" alt="Like" />
+            <img src="images/love.png" alt="Love" />
+            <img src="images/clap.png" alt="Clap" />
+            <span class="liked-users">Mayur Patil and 75 others</span>
+          </div>
+          <span>22 comments · 40 shares</span>
+        </div>
+        <div class="post-activity">
+          <div>
+            <img src="images/WhatsApp Image 2025-07-10 at 20.45.10_2d9c46dd.jpg" class="post-activity-user-icon" alt="User Icon" />
+            <img src="images/down-arrow.png" class="post-activity-user-icon" alt="Dropdown" />
+          </div>
+          <div class="post-activity-link"><img src="images/like.png" alt="Like" /><span>Like</span></div>
+          <div class="post-activity-link"><img src="images/comment.png" alt="Comment" /><span>Comment</span></div>
+          <div class="post-activity-link"><img src="images/share.png" alt="Share" /><span>Share</span></div>
+          <div class="post-activity-link"><img src="images/send.png" alt="Send" /><span>Send</span></div>
+        </div>
+      </div>
+ <!-- Post 5 -->
+      <div class="post">
+        <div class="post-author">
+          <img src="c:\Users\Shaik\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Snips\Screenshot 2025-07-10 025123.png" alt="Author" />
+          <div>
+            <h1>Huzaif Khan</h1>
+            <small>B.Tech in Artificial Intelligence | Machine Learning</small>
+            <small>2days ago</small>
+          </div>
+        </div>
+        <p>
+
+
+🏐 Victory Vibes! 🏆🔥
+Proud to share that we won the Volleyball Championship at MGMU Olympics! 💪🎉
+
+Teamwork, passion, and dedication made this moment unforgettable. 🤝💯
+Grateful for the support, hustle, and the spirit we brought to the court! 🙌❤️
+
+Let’s keep smashing goals — on and off the field! 🚀
+#Champions #VolleyballVibes #MGMUOlympics #Victory #TeamWork #GameOn #WinningMoment #Sportsmanship 💙💥🥇📸
+
+
+        </p>
+        <img src="images/WhatsApp Image 2025-07-10 at 21.03.12_9ff0994a.jpg" width="100%" alt="Post Image" />
+        <div class="post-stats">
+          <div>
+            <img src="images/thumbsup.png" alt="Like" />
+            <img src="images/love.png" alt="Love" />
+            <img src="images/clap.png" alt="Clap" />
+            <span class="liked-users">Zaki Khan and 300 others</span>
+          </div>
+          <span>29 comments · 56 shares</span>
+        </div>
+        <div class="post-activity">
+          <div>
+            <img src="images/WhatsApp Image 2025-07-10 at 21.13.13_825bab94.jpg" class="post-activity-user-icon" alt="User Icon" />
+            <img src="images/down-arrow.png" class="post-activity-user-icon" alt="Dropdown" />
+          </div>
+          <div class="post-activity-link"><img src="images/like.png" alt="Like" /><span>Like</span></div>
+          <div class="post-activity-link"><img src="images/comment.png" alt="Comment" /><span>Comment</span></div>
+          <div class="post-activity-link"><img src="images/share.png" alt="Share" /><span>Share</span></div>
+          <div class="post-activity-link"><img src="images/send.png" alt="Send" /><span>Send</span></div>
+        </div>
+      </div>
+<!---- Post 6 ---->
+      <div class="post">
+        <div class="post-author">
+          <img src="c:\Users\Shaik\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Snips\Screenshot 2025-07-10 025123.png" alt="Author" />
+          <div>
+            <h1>Huzaif Khan</h1>
+            <small>B.Tech in Artificial Intelligence | Machine Learning</small>
+            <small>2days ago</small>
+          </div>
+        </div>
+        <p>
+
+
+🪷 Traditional Day Vibes! 🌺💥
+Channeling our inner South Indian swag in veshti style 😎✨
+Because tradition + style = unbeatable combo 💯💫
+
+From filter coffee to full-on vibes — we brought the culture, color, and coolness to the celebration! 🎊🤙
+Swipe right to feel the thenga energy 🥥🔥
+
+#TraditionalDay #SouthIndianSwag #EthnicVibes #DesiStyle #CampusDiaries #FestiveFeels #ThengaPower #CollegeFun 📸🖤🕺
+
+        </p>
+        <img src="images/WhatsApp Image 2025-07-10 at 21.18.44_db363b32.jpg" width="100%" alt="Post Image" />
+        <div class="post-stats">
+          <div>
+            <img src="images/thumbsup.png" alt="Like" />
+            <img src="images/love.png" alt="Love" />
+            <img src="images/clap.png" alt="Clap" />
+            <span class="liked-users">Adnan sayyed Khan and 56 others</span>
+          </div>
+          <span>98 comments · 89 shares</span>
+        </div>
+        <div class="post-activity">
+          <div>
+            <img src="images/WhatsApp Image 2025-07-10 at 21.13.13_825bab94.jpg" class="post-activity-user-icon" alt="User Icon" />
+            <img src="images/down-arrow.png" class="post-activity-user-icon" alt="Dropdown" />
+          </div>
+          <div class="post-activity-link"><img src="images/like.png" alt="Like" /><span>Like</span></div>
+          <div class="post-activity-link"><img src="images/comment.png" alt="Comment" /><span>Comment</span></div>
+          <div class="post-activity-link"><img src="images/share.png" alt="Share" /><span>Share</span></div>
+          <div class="post-activity-link"><img src="images/send.png" alt="Send" /><span>Send</span></div>
+        </div>
+      </div>
+
+      
+<!---- Post 5 ---->
+      <div class="post">
+        <div class="post-author">
+          <img src="images/WhatsApp Image 2025-07-10 at 21.34.16_1fb22a9f.jpg" alt="Author" />
+          <div>
+            <h1>Manthan Bhadari</h1>
+            <small>B.Tech in Artificial Intelligence | Machine Learning</small>
+            <small>2 months ago</small>
+          </div>
+        </div>
+        <p>
+
+✨ Winning Moment Unlocked! 🏆🎬
+Proud to receive the Best Audio Visual Effects award at Spectacle 2025 - Jashn-e-Jazbaat! 💥🎧📽️
+From syncing sounds to sparking emotions — every detail paid off! 🔥💡
+
+A big shoutout to the entire team for the creativity, effort, and endless jazbaat that brought this magic to life! 💪❤️
+
+#WinningVibes #Spectacle2025 #JashnEJazbaat #BestAVEffects #ProudMoment #AudioVisualMagic #StageGlory #TeamworkMakesTheDreamWork 🥳🌟🎊
+        </p>
+        <img src="images/WhatsApp Image 2025-07-10 at 21.26.41_ff053272.jpg" width="100%" alt="Post Image" />
+        <div class="post-stats">
+          <div>
+            <img src="images/thumbsup.png" alt="Like" />
+            <img src="images/love.png" alt="Love" />
+            <img src="images/clap.png" alt="Clap" />
+            <span class="liked-users"> Huzaif khan and 56 others</span>
+          </div>
+          <span>98 comments · 89 shares</span>
+        </div>
+        <div class="post-activity">
+          <div>
+            <img src="c:\Users\Shaik\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Snips\Screenshot 2025-07-10 025123.png" class="post-activity-user-icon" alt="User Icon" />
+            <img src="images/down-arrow.png" class="post-activity-user-icon" alt="Dropdown" />
+          </div>
+          <div class="post-activity-link"><img src="images/like.png" alt="Like" /><span>Like</span></div>
+          <div class="post-activity-link"><img src="images/comment.png" alt="Comment" /><span>Comment</span></div>
+          <div class="post-activity-link"><img src="images/share.png" alt="Share" /><span>Share</span></div>
+          <div class="post-activity-link"><img src="images/send.png" alt="Send" /><span>Send</span></div>
+        </div>
+      </div>
+
+      <!---- Post 6---->
+      <div class="post">
+        <div class="post-author">
+          <img src="sai.jpg" alt="Author" />
+          <div>
+            <h1>Sai Shinde</h1>
+            <small>B.Tech in Artificial Intelligence | Machine Learning</small>
+            <small>9 months ago</small>
+          </div>
+        </div>
+        <p>
+
+🐍✨ Python Quest Conquered! 🏆🎉
+Proud to share that we secured 1st Prize in the IEEE Python Quiz Competition at MGM University! 💡💻
+
+A big thanks to the IEEE Student Branch for organizing such an engaging and knowledge-packed event. 🙌📘
+Victory tastes even sweeter when it’s powered by code! 🔥👨‍💻👨‍🎓
+
+#IEEE #PythonQuest #QuizChampions #1stPrize #TechVictory #MGMUniversity #CodeAndConquer #PythonProgramming #ProudMoment 🧠💥🎖️
+        </p>
+        <img src="images/WhatsApp Image 2025-07-10 at 22.18.23_728824a7.jpg" width="100%" alt="Post Image" />
+        <div class="post-stats">
+          <div>
+            <img src="images/thumbsup.png" alt="Like" />
+            <img src="images/love.png" alt="Love" />
+            <img src="images/clap.png" alt="Clap" />
+            <span class="liked-users"> Manthan bhandari and 56 others</span>
+          </div>
+          <span>88 comments · 82 shares</span>
+        </div>
+        <div class="post-activity">
+          <div>
+            <img src="images/WhatsApp Image 2025-07-10 at 21.34.16_1fb22a9f.jpg" class="post-activity-user-icon" alt="User Icon" />
+            <img src="images/down-arrow.png" class="post-activity-user-icon" alt="Dropdown" />
+          </div>
+          <div class="post-activity-link"><img src="images/like.png" alt="Like" /><span>Like</span></div>
+          <div class="post-activity-link"><img src="images/comment.png" alt="Comment" /><span>Comment</span></div>
+          <div class="post-activity-link"><img src="images/share.png" alt="Share" /><span>Share</span></div>
+          <div class="post-activity-link"><img src="images/send.png" alt="Send" /><span>Send</span></div>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="right-sidebar">
+
+      <div class="sidebar-news">
+        <img src="images/more.png" class="info-icon" alt="More" />
+        <h3>Trending News</h3>
+        <a href="#">High demand for skilled manpower</a><span>1d ago  10,934 readers</span>
+        <a href="#">Careers growing horizontally too</a><span>19h ago  1,552 readers</span>
+        <a href="#">Fewer US visas, more for the UK</a><span>1d ago 27,290 readers</span>
+        <a href="#">More hiring = higher confidence?</a><span>18h ago 10,934 readers</span>
+        <a href="#">Gautam Adani becomes 3rd richest</a><span>12h ago  10,934 readers</span>
+        <a href="#" class="read-more-link">Read more</a>
+      </div>
+
+      <div class="sidebar-ad">
+        <small>Ad &middot; &middot; &middot;</small>
+        <p>Master the 5 principles of web design</p>
+        <img src="c:\Users\Shaik\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Snips\Screenshot 2025-07-10 025123.png">
+        <img src="images/mi-logo.png">
+        <b>Brand and Demand in Xiaomi</b>
+        <a href="#" class="ad-link">Learn more</a>
+      </div>
+
+      <div class="sidebar-useful-link">
+        <a href="#">About</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Help Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Advertising</a>
+        <a href="#">Get the App</a>
+        <a href="#">More</a>
+        <div class="copyright-msg">
+          <img src="images/logo.png" alt="Logo" />
+          <p>Linkedup &#169; 2025. All right reserved</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<script>
+  let profileMenu = document.getElementById("profileMenu");
+
+  function toggleMenu(){
+    profileMenu.classList.toggle("open-menu");
+  }
+
+</script>
+
+<script>
+
+  let sideActivity = document.getElementById("sidebarActivity");
+  let moreLink = document.getElementById("showMoreLink");
+
+function toggleActivity(){
+  sideActivity.classList.toggle("open-activity");
+
+if(sideActivity.classList.contains("open-activity")){
+  moreLink.innerHTML = "Show less <b>-</b>";
+}
+else{
+  moreLink.innerHTML = "Show more <b>+</b>";
+
+}
+}
+
+
+
+
+</script>
+
+</body>
+</html>
+
